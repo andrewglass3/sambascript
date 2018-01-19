@@ -81,7 +81,7 @@ then
 
   echo 'The account could not be created.'
 
-  exit 1
+#exit 1
 
 fi
 
