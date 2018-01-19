@@ -148,8 +148,12 @@ echo 'host:'
 
 echo "${HOSTNAME}"
 
-# Set permissions on samba share
+#Create samba share folder
 
+mkdir -p /mnt/samba
+
+# Set permissions on samba share
+chown -R root:smbusers /mnt/samba
 chown -R 775 /mnt/samba
 
 #Enable samba to start on boot
